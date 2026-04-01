@@ -1,13 +1,21 @@
 package com.seleinum.Selenium_Basics;
 
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {    	
 
+        WebDriver driver = new FirefoxDriver();
 
-    	System.out.println("Hello world");
+        driver.get("https://www.flipkart.com/");
+        System.out.println("Title: " + driver.getTitle());
+        System.out.println("URL: " + driver.getCurrentUrl());
+
+        driver.quit();
+
     	
 
         
