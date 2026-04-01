@@ -2,11 +2,13 @@ package com.seleinum.Selenium_Basics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+
 
 public class App {
 
-    public static void main(String[] args) {    	
+    public static void main(String[] args) {
+
+        
 
         WebDriver driver = new FirefoxDriver();
 
@@ -15,9 +17,5 @@ public class App {
         System.out.println("URL: " + driver.getCurrentUrl());
 
         driver.quit();
-
-    	
-
-        
     }
 }
